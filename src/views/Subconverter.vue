@@ -247,7 +247,7 @@
                     type="success"
                     icon="el-icon-video-play"
                     @click="centerDialogVisible = true"
-                >保姆级视频教程
+                >相关教程
                 </el-button>
               </el-form-item>
             </el-form>
@@ -256,7 +256,7 @@
       </el-col>
     </el-row>
    <el-dialog
-        title="请选择需要观看的视频教程"
+        title="请选择需要查看的教程"
         :visible.sync="centerDialogVisible"
         :show-close="false"
         width="40vh"
@@ -268,7 +268,7 @@
           type="primary"
           icon="el-icon-video-play"
           @click="gotoBasicVideo();centerDialogVisible = false"
-      >基础视频教程
+      >Bood机场
       </el-button>
      </div>
      <div label-width="0px" style="text-align: center;margin: 3vh 0 2vh">
@@ -277,7 +277,7 @@
           type="danger"
           icon="el-icon-video-play"
           @click="gotoAdvancedVideo();centerDialogVisible = false"
-      >进阶视频教程
+      >年糕日记
       </el-button>
      </div>
      <div label-width="0px" style="text-align: center;margin: 3vh 0 2vh">
@@ -286,7 +286,7 @@
           type="warning"
           icon="el-icon-download"
           @click="toolsDown"
-      >代理工具集合
+      >代理工具下载
       </el-button>
      </div> 
     </el-dialog>
@@ -995,26 +995,8 @@ export default {
       }
     },
     tanchuang() {
-      this.$alert(`<div style="color: #8400ff;">
-
-<p>国庆7天众多优惠活动已经开始，特为大家带来以下福利，均有比较大的优惠：</p>
-
-<p>高端IEPL机场牧场物语，也是我一直使用的主力机场之一，价位从28-168不等，适用于各个需求级别的用户，原生支持各种常见流媒体，支持各种AI产品服务，稳定不跑路</p>
-<p>牧场物语官网：<a href="https://www.mcwy.org" target="_blank" style="color: #00ff84; text-decoration: underline;">https://www.mcwy.org</a></p>
-<p style="font-weight: bold; color: red;">国庆节八五折优惠码：mcw15 （用于半年和年度使用）</p>
-<p style="font-weight: bold; color: red;">国庆节九折优惠码：mcw10 （用于月度和季度使用）</p>
-
-
-<p>各种流媒体合租，包括奈飞、Disney、HBO、Spotify、Prime Video等，还有各种AI合租代购，包括ChatGPT Plus，MidJourney等众多AI产品</p>
-<p>合租网站：<a href="https://hezu.v1.mk" target="_blank" style="color: #00ff84; text-decoration: underline;">https://hezu.v1.mk</a></p>
-<p style="font-weight: bold; color: red;">优惠码为：feiyang</p>
-
-<p>IOS各区ID、各区APP Store代购、Google Voice账号等上车网站：</p>
-<p><a href="https://fk.myue.club" target="_blank" style="color: #00ff84; text-decoration: underline;">https://fk.myue.club</a></p>
-<p style="font-weight: bold; color: red;">优惠码：国庆快乐</p>
-
-</div>`, '信息面板', {
-        confirmButtonText: '确定',
+            this.$alert(`<div style="text-align:center;font-size:10px"><strong><span style="font-size:10px">官方客服：</span><span><a href="https://t.me/missnmbot" target="_blank" style="color:red;font-size:10px;text-decoration:none">点击联系</a></span></strong></br><strong><span style="font-size:10px">Bood机场（<span style="color:blue">支持各种流媒体</span>）：</span><span><a href="https://www.menotes.wiki" style="color:red;font-size:10px;text-decoration:none">点击注册</a></span></strong></br><strong><span style="font-size:10px">AppleID、ChatGPT购买（<span style="color:blue">稳的一批</span>）：</span><span><a href="https://www.menotes.me" style="color:red;font-size:10px;text-decoration:none">点击购买</a></span></strong></br><strong><span style="font-size:10px">年糕日记：</span><span><a href="https://missnm.com" style="color:red;font-size:10px;text-decoration:none">点击访问</a></span></strong></br></div>`, '公告栏', {
+        confirmButtonText: '已了解',
         dangerouslyUseHTMLString: true,
         customClass: 'msgbox'
       });
@@ -1038,7 +1020,7 @@ export default {
       window.open(downld);
     },
     gotoBasicVideo() {
-      this.$alert("别忘了关注友善的肥羊哦！", {
+      this.$alert("希望多多支持！", {
         type: "warning",
         confirmButtonText: '确定',
         customClass: 'msgbox',
@@ -1049,7 +1031,7 @@ export default {
           });
     },
     gotoAdvancedVideo() {
-      this.$alert("别忘了关注友善的肥羊哦！", {
+      this.$alert("希望多多支持！", {
         type: "warning",
         confirmButtonText: '确定',
         customClass: 'msgbox',
